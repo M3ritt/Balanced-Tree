@@ -1,9 +1,9 @@
 # 380Project
 
 ## Names
-Jondn Tyrniski
-Tommy Hanley
-Josh Meritt
+Jondn Tryniski,
+Tommy Hanley,
+Josh Meritt.
 
 ### Project Description
 The system created will be an inventory and sales tool. The tool will have users which allow us to login and track individual sales. 
