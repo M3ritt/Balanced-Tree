@@ -16,19 +16,27 @@ public class User{
 
     }
 
-    public void setPassword(String password){
-
-        System.out.println("Please input the password you would like.(It must meet minimal security specification)");
-        input = sc.nextLine();
+    public void setPassword(){
+        
         isValid = false;
-        while(isValid == false){
-            if(input.length() > 8)
+        do{
+            System.out.print("Please input the password you would like. ");
+            input = sc.next();
+
+            System.out.println(input);
+
+            if(input.length() <= 7)
                 System.out.println("Sorry password must be longer. Please try again.");
             else{
                 System.out.println("Your new password is set.");
                 isValid = true;
+                password = input;
             }
         }
+        
+        while(isValid == false);
+        
+        
     }
 
     public String getPassword(){
