@@ -11,25 +11,25 @@ The system created will be an inventory and sales tool. The tool will have users
 
 ### System Requirements
 #### Requirement Scale 1-5 1-Highest, 5-Lowest
-Requirement 1: P- The system will track sales totals.
+Requirement 1: P1 The system will track sales totals.
 
-Requirement 2: P- The system will allow for creation of users.
+Requirement 2: P3 The system will allow for creation of users.
 
-Requirement 3: P- The user will be able to autheticate into the system via a password.
+Requirement 3: P3 The user will be able to authenticate into the system via a password.
 
-Requirement 4: P- The system will track individuals sales totals.
+Requirement 4: P4 The system will track individuals sales totals.
 
-Requirement 5: P- The system will alert when running low on certain products once a threshold is met.
+Requirement 5: P4 The system will alert when running low on certain products once a threshold is met.
 
-Requirement 6: P- The system will take into account current sales to help predict when to order products.
+Requirement 6: P5 The system will take into account current sales to help predict when to order products.
 
-Requirement 7: P- The system will have a command for showing current stock levels.
+Requirement 7: P2 The system will have a command for showing current stock levels.
 
-Requirement 8: P- The system will allow for adding prices to items in inventory.
+Requirement 8: P2 The system will allow for adding prices to items in inventory.
 
-Requirement 9: P- The system will alow for editing of item's prices in inventory.
+Requirement 9: P2 The system will allow for editing of item's prices in inventory.
 
-Requirement 10: P- The system will have daily and weekly reports of sales.
+Requirement 10: P5 The system will have daily and weekly reports of sales.
 
 
 ### User Stories
