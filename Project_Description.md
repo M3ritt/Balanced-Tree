@@ -3,7 +3,7 @@ Sales and Inventory Tool
 
 ## Names
 Jondn Tryniski,
-Tommy Hanley,
+Thomas Hanley,
 Josh Meritt.
 
 ### Project Description
