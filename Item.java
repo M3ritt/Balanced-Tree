@@ -23,6 +23,6 @@ public class Item {
 
 	@Override
 	public String toString() {
-		return this.itemName + " " + this.price + ".";
+		return "Item: "+ this.itemName + " Price: " + this.price + ".";
 	}
 }
