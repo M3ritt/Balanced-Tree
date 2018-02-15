@@ -13,12 +13,12 @@ public class Main{
 		Item testItem = new Item("peach", 3.4);
 		Item testItem2 = new Item("apple", 3.6);
 		
-		Inventory test = new Inventory(testInv);
-		test.addItem(testItem);
-		test.addItem(testItem2);
+		Inventory quiz = new Inventory(testInv);
+		quiz.addItem(testItem);
+		quiz.addItem(testItem2);
 		
 		System.out.println("Inventory count: "+test.getCount());
-		test.getItems();
+		quiz.getItems();
 //=======
         User test = new User();
         User secondTest = new User("John Doe", "TestPassword2");
