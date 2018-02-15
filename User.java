@@ -1,48 +1,28 @@
-import java.util.Scanner;
+public class User {
+	private String userName, password;
 
-public class User{
+	public User() {
+		this.userName = this.password = "";
+	}
 
-    //Field Summary
-    String userName;
-    String password;
-    Scanner sc = new Scanner(System.in);
-    String input;
-    Boolean isValid;
+	public User(String userName, String password) {
+		this.userName = userName;
+		this.password = password;
+	}
 
-    //Constructor
-    public User(String userName){
+	public String getUserName() {
+		return this.userName;
+	}
 
-        this.userName = userName;
+	public String getPassword() {
+		return this.password;
+	}
 
-    }
+	public void setUserName(String influx) {
+		this.userName = influx;
+	}
 
-    public void setPassword(){
-        
-        isValid = false;
-        do{
-            System.out.print("Please input the password you would like. ");
-            input = sc.next();
-
-            System.out.println(input);
-
-            if(input.length() <= 7)
-                System.out.println("Sorry password must be longer. Please try again.");
-            else{
-                System.out.println("Your new password is set.");
-                isValid = true;
-                password = input;
-            }
-        }
-        
-        while(isValid == false);
-        
-        
-    }
-
-    public String getPassword(){
-
-        return password;
-
-    }
-
+	public void setPassword(String qwop) {
+		this.password = qwop;
+	}
 }
