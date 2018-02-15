@@ -39,6 +39,8 @@ As a manager of a store, I want to be able to add new users so that I can have m
 
 As a manager of a store, I want to be able to see what items are popular so that I can restock accordingly.
 
+As a manager of a store, I want to be able to see what is sold daily and weekly in order to see what is selling
+
 As a manager of a store, I want to be able to count the inventory so that I can see what needs to be restocked. 
 
 As a manager of a store, I need to see how much my employees are selling in order to see how productive they are.
