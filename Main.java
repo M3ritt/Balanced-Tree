@@ -17,7 +17,7 @@ public class Main{
 		quiz.addItem(testItem);
 		quiz.addItem(testItem2);
 		
-		System.out.println("Inventory count: "+test.getCount());
+		System.out.println("Inventory count: " + quiz.getCount());
 		quiz.getItems();
 //=======
         User test = new User();
