@@ -35,6 +35,10 @@ Requirement 10: P5 The system will have daily and weekly reports of sales.
 ### User Stories
 As a manager of a store, I want to be able to add new users so that I can have more cashiers.
 
+As a manager of a store, I want to be able to see what items are popular so that I can restock accordingly.
+
+As a manager of a store, I need to see how much my employees are selling in order to see how productive they are.
+
 As a manager of a store, I want to be able to count the inventory so that I can see what needs to be restocked. 
 
 As a cashier, I want to be able to log into my personal profile so that I can keep track of what I sell.
