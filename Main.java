@@ -2,7 +2,7 @@ import java.util.ArrayList;
 public class Main{
 
     public static void main(String[] args){
-<<<<<<< HEAD
+//<<<<<<< HEAD
         // User test = new User("test");
 
         // test.setPassword();
@@ -19,7 +19,7 @@ public class Main{
 		
 		System.out.println("Inventory count: "+test.getCount());
 		test.getItems();
-=======
+//=======
         User test = new User();
         User secondTest = new User("John Doe", "TestPassword2");
 
@@ -29,6 +29,6 @@ public class Main{
         System.out.println("First test username: " + test.getUserName());
         System.out.println("Second test username: " + secondTest.getUserName());
         System.out.println("Passwords in order: " + test.getPassword() + ", " + secondTest.getPassword());
->>>>>>> 2a57c8a34aeafc30ebf49b9e799a8a038ff904d9
+//>>>>>>> 2a57c8a34aeafc30ebf49b9e799a8a038ff904d9
     }
 }
