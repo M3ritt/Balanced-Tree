@@ -33,8 +33,7 @@ Requirement 10: P5 The system will have daily and weekly reports of sales.
 
 Requirement 11: P3 The system will be organized so that one can see inventory in different departments.
 
-Requirement 12: P3 The system will be able to be shut down and loaded again with having the same information as before 
-it was shut down.
+Requirement 12: P3 The system will be able to be shut down and loaded again with having the same information as before it was shut down.
 
 Requirement 13: P4 The system will be able to calculate the net profit of the inventory daily and weekly. 
 
@@ -45,22 +44,32 @@ Requirement 15: P2 The system will allow users to add and remove items manually.
 
 ### User Stories
 
-As a manager of a store, I want to be able to load in my inventory after shutting the system down.
+User Story 1: As a manager of a store, I want to be able to load in my inventory after shutting the system down. 
+Time: 8
 
-As a manager of a store, I want to be able to add new users so that I can have more cashiers.
+User Story 2: As a manager of a store, I want to be able to add new users so that I can have more cashiers.
+Time: 5
 
-As a manager of a store, I want to be able to see what items are popular so that I can restock accordingly.
+User Story 3: As a manager of a store, I want to be able to see what items are popular so that I can restock accordingly.
+Time: 4
 
-As a manager of a store, I want to be able to see what is sold daily and weekly in order to see what is selling
+User Story 4: As a manager of a store, I want to be able to see what is sold daily and weekly in order to see what is selling.
+Time: 5
 
-As a manager of a store, I want to be able to count the inventory so that I can see what needs to be restocked. 
+User Story 5: As a manager of a store, I want to be able to count the inventory so that I can see what needs to be restocked. 
+Time: 4
 
-As a manager of a store, I want to be able to see how much money was made each day and each week.
+User Story 6: As a manager of a store, I want to be able to see how much money was made each day and each week.
+Time: 5
 
-As a manager of a store, I need to see how much my employees are selling in order to see how productive they are.
+User Story 7: As a manager of a store, I need to see how much my employees are selling in order to see how productive they are.
+Time: 6
 
-As a manager of a store, I want to have restrictions on who has access to certain parts of the inventory.
+User Story 8: As a manager of a store, I want to have restrictions on who has access to certain parts of the inventory.
+Time: 4
 
-As a cashier, I want to be able to log into my personal profile so that I can keep track of what I sell.
+User Story 9: As a cashier, I want to be able to log into my personal profile so that I can keep track of what I sell.
+Time: 5
 
-As a cashier, I want to be able to cash people out so that I can make sales and keep my job. 
+User Story 10: As a cashier, I want to be able to cash people out so that I can make sales and keep my job. 
+Time: 4
