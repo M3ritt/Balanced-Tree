@@ -15,6 +15,7 @@ import java.util.ArrayList;
 public class InventoryParser extends DefaultHandler {
 	private ArrayList<Item> iList;
 	private double price;
+	private Inventory newInv;
 	private String itemName;
 	public void startDocument() throws SAXException {
 		iList = new ArrayList<Item>();
@@ -41,9 +42,13 @@ public class InventoryParser extends DefaultHandler {
 							 String localName,
 							 String qName) throws SAXException {
 		if(qName.equals("item")) {
-			Inventory newInv = new Inventory(iList);	
+			newInv = new Inventory(iList);	
 		}
 	}
 
 	public void endDocument() throws SAXException {}
+
+	public Inventory getInvt() {
+		return this.newInv;
+	}
 }

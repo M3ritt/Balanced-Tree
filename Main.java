@@ -13,6 +13,7 @@ import java.util.Scanner;
 public class Main{
 
     public static void main(String[] args){
+        Inventory invt;
 /*//<<<<<<< HEAD
         // User test = new User("test");
 
@@ -54,10 +55,12 @@ public class Main{
             SAXParser saxParser = spf.newSAXParser();
             InventoryParser ixmlp = new InventoryParser();
             saxParser.parse(xmlInput, ixmlp);
-
+            invt = ixmlp.getInvt();
         }
         catch(SAXException|ParserConfigurationException|IOException e){
             e.printStackTrace();
+            invt = null;
         }
+        invt.getItems();
     }
 }

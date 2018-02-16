@@ -21,8 +21,7 @@ public class Inventory {
 	}
 	
 	public void getItems(){
-		for(int i=0;i<count;i++){
-			System.out.println(iList.get(i));
-		}
+		for(Item i: iList)
+			System.out.println(i);
 	}
 }
