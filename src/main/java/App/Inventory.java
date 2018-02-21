@@ -42,7 +42,6 @@ public class Inventory {
 		}
 		else {
 			System.out.println("Sorry the item " + item.getName() + " is not in the inventory.");
-			return null;
 		}
 		return null;
 	}
