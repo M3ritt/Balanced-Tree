@@ -12,9 +12,6 @@ public class Register {
 	private Scanner sc = new Scanner(System.in);
 	private String temp;
 	
-	//For the register do we want it to load all inventories or just the inventory of a certain department? If so we would could have a couple different
-	//constructors in order to change it. I.E. (One constructor takes no inventory, one takes one, the other takes arrarylist of inventories, maybe
-	// a hashmap. 
 	
 	public Register(Inventory inventory) {
 		this.inventory = inventory;
@@ -44,7 +41,7 @@ public class Register {
 		//This logic depends on how we implement the count of individual items. Wether it be individual inventories for each item, or a itemCount in inventory.
 	}
 	
-	public void return() {
+	public void itemReturn() {
 		//This will return an item and increse the count of the item.
 	}
 	
