@@ -39,6 +39,38 @@ public class Register {
 		changeDue = amountGiven - saleTotal;
 		System.out.println("Customer Change: " + changeDue + ".");
 	}
+	
+	public void checkInventory() {
+		//This logic depends on how we implement the count of individual items. Wether it be individual inventories for each item, or a itemCount in inventory.
+	}
+	
+	public void return() {
+		//This will return an item and increse the count of the item.
+	}
+	
+	public void dailyInventory() {
+		//This will go through and get the inventory for each item at the end of the day
+	}
+	
+	public void weeklyInventory() {
+		//This will check the inventory at the end of the week
+	}
+	
+	public void dailySalesTotals() {
+		//This will go through and get the sales totals for everything for the day
+	}
+	
+	public void weeklySalesTotals() {
+		//This will get the weekly sales totals
+	}
+	
+	public void dailyReport() {
+		//This will give daily report for sales, inventory, total tax, and user metrics
+	}
+	
+	public void weeklyReport() {
+		//This will give the weekly report for sales, inventory, total tax, and user metrics.
+	}
 
 	public double getDailySalesTotal() {
 		return dailySalesTotal;
