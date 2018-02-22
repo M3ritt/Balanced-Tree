@@ -1,16 +1,16 @@
 package App;
 
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.io.IOException;
+//import java.io.FileInputStream;
+//import java.io.InputStream;
+//import java.io.IOException;
 
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import javax.xml.parsers.SAXParser;
-import javax.xml.parsers.SAXParserFactory;
-import javax.xml.parsers.ParserConfigurationException;
+//import javax.xml.parsers.SAXParser;
+//import javax.xml.parsers.SAXParserFactory;
+//import javax.xml.parsers.ParserConfigurationException;
 
 import java.util.ArrayList;
 
@@ -27,8 +27,10 @@ public class InventoryParser extends DefaultHandler {
 							 String localName,
 							 String qName,
 							 Attributes atts) throws SAXException {
+		
 		switch(qName.toLowerCase()) {
-			case "item":
+			
+		case "item":
 				itemName = atts.getValue("name");
 				String sprice = atts.getValue("price");
 				price = Double.parseDouble(sprice);
@@ -44,7 +46,7 @@ public class InventoryParser extends DefaultHandler {
 							 String localName,
 							 String qName) throws SAXException {
 		if(qName.equals("item")) {
-			newInv = new Inventory(iList);	
+			newInv = new Inventory(iList);
 		}
 	}
 

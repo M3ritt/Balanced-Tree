@@ -42,7 +42,7 @@ public class Register {
 	}
 	
 	public void itemReturn() {
-		//This will return an item and increse the count of the item.
+		//This will return an item and increase the count of the item.
 	}
 	
 	public void dailyInventory() {
