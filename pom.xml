@@ -16,9 +16,7 @@
       	<target>1.8</target>
         <archive>
           <manifest>
-            <addClasspath>true</addClasspath>
-            <classpathPrefix>target/classes/app/</classpathPrefix>
-            <mainClass>Main.class</mainClass>
+            <mainClass>App.Main</mainClass>
           </manifest>
         </archive>
       </configuration>
