@@ -7,6 +7,7 @@ public class Inventory {
 	//Generic for items
 	private ArrayList<Item> iList;
 	private int count = 0;
+	private int tempItemCount;
 	private Item temp;
 	
 	public Inventory(ArrayList<Item> iList) {
@@ -22,6 +23,8 @@ public class Inventory {
 	public void addItem(Item newItem){
 		iList.add(count, newItem);
 		count++;
+		tempItemCount = newItem.getItemCount();
+		newItem.setItemCount(++tempItemCount);
 	}
 	
 	public void getItems(){

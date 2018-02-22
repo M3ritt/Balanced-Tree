@@ -3,6 +3,7 @@ package App;
 public class Item {
 	private String itemName;
 	private double price;
+	private int itemCount;
 	//private int numSold;
 	//Could convert this to a hashmap
 
@@ -14,6 +15,14 @@ public class Item {
 	public Item() {
 		itemName = "";
 		price = 0.0;
+	}
+
+	public int getItemCount() {
+		return itemCount;
+	}
+
+	public void setItemCount(int itemCount) {
+		this.itemCount = itemCount;
 	}
 
 	public String getName() {

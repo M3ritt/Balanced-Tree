@@ -38,7 +38,9 @@ public class Register {
 	}
 	
 	public void checkInventory() {
-		//This logic depends on how we implement the count of individual items. Wether it be individual inventories for each item, or a itemCount in inventory.
+		//for(Item i: inventory) {
+			//This needs to get the index of the first instance of each item, then store those indexes somewhere, get the items and then use item.getItemCount();
+		//}
 	}
 	
 	public void itemReturn() {
