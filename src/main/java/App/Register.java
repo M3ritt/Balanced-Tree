@@ -15,7 +15,7 @@ public class Register {
 	
 	public Register(Inventory inventory) {
 		this.inventory = inventory;
-		this.taxRate = .08;
+		this.taxRate = 1.08;
 	}
 	
 	public void sale() {
@@ -35,6 +35,7 @@ public class Register {
 		amountGiven = Double.parseDouble(temp);
 		changeDue = amountGiven - saleTotal;
 		System.out.println("Customer Change: " + changeDue + ".");
+		saleTotal = amountGiven = changeDue = 0.0;
 	}
 	
 	public void checkInventory() {
@@ -44,7 +45,16 @@ public class Register {
 	}
 	
 	public void itemReturn() {
-		//This will return an item and increase the count of the item.
+		System.out.println("Please enter an item to return: ");
+		itemTemp.setName(sc.nextLine());
+		System.out.println("Please enter the price of what is being returned: ");
+		temp = sc.nextLine();
+		itemTemp.setPrice(Double.parseDouble(temp));
+		inventory.addItem(itemTemp);
+		changeDue = itemTemp.getPrice() * taxRate;
+		System.out.println("Item returned total due back to customer is: " + changeDue + ".");
+		dailySalesTotal -= itemTemp.getPrice();
+		changeDue = 0.0;
 	}
 	
 	public void dailyInventory() {
