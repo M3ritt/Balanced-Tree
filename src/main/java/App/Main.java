@@ -19,9 +19,8 @@ public class Main{
 
 	public static void main(String[] args){
         Inventory invt;
+        Register reg;
 
-
-        
         SAXParserFactory spf = SAXParserFactory.newInstance();
         
         //System.out.println("Enter the name of the file: ");
@@ -39,5 +38,9 @@ public class Main{
             invt = null;
         }
         invt.getItems();
+        
+        reg = new Register(invt);
+        reg.sale();
+        //reg.itemReturn();
     }
 }

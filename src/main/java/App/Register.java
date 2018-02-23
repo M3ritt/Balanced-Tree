@@ -2,6 +2,7 @@ package App;
 
 //import java.util.ArrayList;
 import java.util.Scanner;
+import java.text.DecimalFormat;
 
 public class Register {
 
@@ -11,6 +12,7 @@ public class Register {
 	private double dailySalesTotal, saleTotal, amountGiven, changeDue, taxRate;
 	private Scanner sc = new Scanner(System.in);
 	private String temp;
+	public DecimalFormat df = new DecimalFormat("#.##");
 	
 	
 	public Register(Inventory inventory) {
@@ -19,22 +21,23 @@ public class Register {
 	}
 	
 	public void sale() {
-		System.out.println("Please enter an item to sell: ");
-		itemTemp.setName(sc.nextLine());
-		itemTemp = inventory.get(itemTemp);
+		System.out.print("Please enter an item to sell: ");
+		temp = sc.nextLine();
+		itemTemp = inventory.get(temp);
 		dailySalesTotal += itemTemp.getPrice();
 		saleTotal += itemTemp.getPrice();
-		System.out.println("Would you like to add another item?");
+		saleTotal = saleTotal * taxRate;
+		System.out.print("Would you like to add another item?");
 		temp = sc.nextLine();
 		temp.toLowerCase();
 		if(temp == "yes")
 			sale();
-		System.out.println("Amount Due: " + saleTotal*taxRate + ".");
-		System.out.println("Amount taken: ");
+		System.out.println("Amount Due: " + df.format(saleTotal) + ".");
+		System.out.print("Amount taken: ");
 		temp = sc.nextLine();
 		amountGiven = Double.parseDouble(temp);
 		changeDue = amountGiven - saleTotal;
-		System.out.println("Customer Change: " + changeDue + ".");
+		System.out.println("Customer Change: " + df.format(changeDue) + ".");
 		saleTotal = amountGiven = changeDue = 0.0;
 	}
 	

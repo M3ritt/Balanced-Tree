@@ -32,21 +32,16 @@ public class Inventory {
 			System.out.println(i);
 	}
 	
-	public Item get(Item item) {
-		if(iList.contains(item) == true) {
-			for(int i = 0; i <= iList.size(); i++) {
-				temp = iList.get(i);
-				if(temp.getName().equals(item.getName())) {
-					return temp;
-				}
-				else
-					continue;
+	public Item get(String name) {
+		for(int i = 0; i <= iList.size(); i++) {
+			temp = iList.get(i);
+			if(temp.getName().equals(name)) {
+				return temp;
 			}
+			else
+				continue;
 		}
-		else {
-			System.out.println("Sorry the item " + item.getName() + " is not in the inventory.");
-		}
+		System.out.println("Sorry the item " + name + " is not in the inventory.");
 		return null;
 	}
-	
 }

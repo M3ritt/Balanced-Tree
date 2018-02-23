@@ -4,7 +4,6 @@ public class Item {
 	private String itemName;
 	private double price;
 	private int itemCount;
-	//private int numSold;
 	//Could convert this to a hashmap
 
 	public Item(String itemName, double price) {
