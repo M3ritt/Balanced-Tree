@@ -22,8 +22,8 @@ public class Register {
 	
 	public void sale() {
 		System.out.print("Please enter an item to sell: ");
-		temp = sc.nextLine();
-		itemTemp = inventory.get(temp);
+		itemTemp.setName(sc.nextLine());
+		itemTemp = inventory.get(itemTemp);
 		dailySalesTotal += itemTemp.getPrice();
 		saleTotal += itemTemp.getPrice();
 		saleTotal = saleTotal * taxRate;
@@ -69,7 +69,7 @@ public class Register {
 	}
 	
 	public void dailySalesTotals() {
-		//This will go through and get the sales totals for everything for the day
+		System.out.println(dailySalesTotal);
 	}
 	
 	public void weeklySalesTotals() {

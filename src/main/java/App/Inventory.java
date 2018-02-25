@@ -8,7 +8,7 @@ public class Inventory {
 	private ArrayList<Item> iList;
 	private int count = 0;
 	private int tempItemCount;
-	private Item temp;
+	private String temp;
 	
 	public Inventory(ArrayList<Item> iList) {
 		this.iList = iList;
@@ -27,21 +27,26 @@ public class Inventory {
 		newItem.setItemCount(++tempItemCount);
 	}
 	
+	public void removeItem(Item item) {
+		iList.remove(item);
+		
+	}
+	
 	public void getItems(){
 		for(Item i: iList)
 			System.out.println(i);
 	}
 	
-	public Item get(String name) {
-		for(int i = 0; i <= iList.size(); i++) {
-			temp = iList.get(i);
-			if(temp.getName().equals(name)) {
-				return temp;
-			}
-			else
-				continue;
-		}
-		System.out.println("Sorry the item " + name + " is not in the inventory.");
-		return null;
+	public Item get(Item item) {
+			temp = item.getName();
+				for(Item i : iList) {
+					if(temp.equals(i.getName())) {
+						item = i;
+						return item;
+					}
+					else
+						continue;
+				}
+		return null;	
 	}
 }
