@@ -1,19 +1,18 @@
 package App;
 
-//import java.util.ArrayList;
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
 public class Register {
 
 	private Item itemTemp = new Item();
-	//private ArrayList<Item> iList;
+	private ArrayList<Item> iList;
 	private Inventory inventory;
-	private double dailySalesTotal, saleTotal, amountGiven, changeDue, taxRate;
+	private double dailySalesTotal, saleTotal, amountGiven, changeDue, taxRate, newPrice;
 	private Scanner sc = new Scanner(System.in);
 	private String temp;
 	public DecimalFormat df = new DecimalFormat("#.##");
-	
 	
 	public Register(Inventory inventory) {
 		this.inventory = inventory;
@@ -27,18 +26,39 @@ public class Register {
 		dailySalesTotal += itemTemp.getPrice();
 		saleTotal += itemTemp.getPrice();
 		saleTotal = saleTotal * taxRate;
-		System.out.print("Would you like to add another item?");
-		temp = sc.nextLine();
-		temp.toLowerCase();
-		if(temp == "yes")
-			sale();
+		//System.out.print("Would you like to add another item?");
+		//temp = sc.nextLine();
+		//temp.toLowerCase();
+		//if(temp == "yes")
+		//	sale();
 		System.out.println("Amount Due: " + df.format(saleTotal) + ".");
 		System.out.print("Amount taken: ");
 		temp = sc.nextLine();
 		amountGiven = Double.parseDouble(temp);
 		changeDue = amountGiven - saleTotal;
 		System.out.println("Customer Change: " + df.format(changeDue) + ".");
+		inventory.removeItem(itemTemp);
 		saleTotal = amountGiven = changeDue = 0.0;
+	}
+	
+	public void removeItem() {
+		//Not working yet
+		System.out.print("Please enter the item to remove: ");
+		itemTemp.setName(sc.nextLine());
+		inventory.removeItem(itemTemp);
+	}
+	
+	public void changeItemPrice() {
+		System.out.print("Please enter the name of the item you would like to change: ");
+		itemTemp.setName(sc.nextLine());
+		iList = inventory.getAll(itemTemp);
+		inventory.iList.removeAll(iList);
+		System.out.print("Please enter the new price for " + itemTemp.getName() + ": ");
+		newPrice = sc.nextDouble();
+		for(Item i : iList) {
+			i.setPrice(newPrice);
+		}
+		inventory.iList.addAll(iList);
 	}
 	
 	public void checkInventory() {

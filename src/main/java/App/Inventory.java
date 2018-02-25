@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Inventory {
 	//Some data structure to save the items... some type of array?
 	//Generic for items
-	private ArrayList<Item> iList;
+	protected ArrayList<Item> iList;
 	private int count = 0;
 	private int tempItemCount;
 	private String temp;
@@ -28,8 +28,7 @@ public class Inventory {
 	}
 	
 	public void removeItem(Item item) {
-		iList.remove(item);
-		
+		iList.remove(item);	
 	}
 	
 	public void getItems(){
@@ -49,4 +48,16 @@ public class Inventory {
 				}
 		return null;	
 	}
+	
+	public ArrayList<Item> getAll(Item item) {
+		ArrayList<Item> itemList = new ArrayList<Item>();
+		temp = item.getName();
+		for(Item i : iList) {
+			if(temp.equals(i.getName())) {
+				itemList.add(i);
+			}
+		}
+		return itemList;
+	}
+	
 }

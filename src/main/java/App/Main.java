@@ -42,5 +42,9 @@ public class Main{
         reg = new Register(invt);
         reg.sale();
         //reg.itemReturn();
+        reg.changeItemPrice();
+        invt.getItems();
+        reg.removeItem();
+        invt.getItems();
     }
 }
